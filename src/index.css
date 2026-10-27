@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Brand Theme Colors */
+  --color-coffee-primary: #c67c4e;
+  --color-coffee-light: #edd6c8;
+  --color-coffee-dark: #313131;
+  --color-coffee-gray: #e3e3e3;
+  --color-coffee-bg: #f9f2ed;
+
+  /* Typography */
+  --font-sora: "Sora", sans-serif;
+}
+
+body {
+  font-family: var(--font-sora);
+  background-color: var(--color-coffee-dark);
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Mobile screen viewport wrapper */
+#root {
+  width: 100%;
+  max-width: 412px;
+  height: 915px;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  background-color: var(--color-coffee-bg);
+}
